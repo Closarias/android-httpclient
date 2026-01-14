@@ -1,4 +1,4 @@
-package es.fpsumma.dam2.api.ui.screen.tareas
+/*package es.fpsumma.dam2.api.ui.screen.tareas
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Arrangement
@@ -44,9 +44,6 @@ fun DetalleTareaScreen(
     vm: TareasViewModel,
     modifier: Modifier = Modifier
 ) {
-
-    val tareaFlow = remember(id) { vm.getTarea(id) }
-    val tarea by tareaFlow.collectAsStateWithLifecycle(initialValue = null)
 
     var titulo by rememberSaveable { mutableStateOf("") }
     var descripcion by rememberSaveable { mutableStateOf("") }
@@ -106,4 +103,4 @@ fun DetalleTareaScreen(
 
         }
     }
-}
+}*/

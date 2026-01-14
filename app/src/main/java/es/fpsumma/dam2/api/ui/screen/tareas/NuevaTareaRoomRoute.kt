@@ -6,11 +6,16 @@ import java.lang.reflect.Modifier
 @Composable
 fun NuevaTareaRoomRoute(
     navController: NavController,
-    vm: TareasViewModel,
-    modifier: Modifier
+    vm: TareasViewModel
 ){
     NuevaTareaContent(
         onBack = {navController.popBackStack()},
-        onSave = {vm.addTarea(titulo = "", descripcion = "") in navController.navigate("TAREAS_LISTADO")}
+        onSave = {
+            vm.addTarea(
+                titulo = "",
+                descripcion = ""
+            )
+            navController.navigate("TAREAS_LISTADO")
+        }
     )
 }
